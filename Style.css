@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f4c3, #dbe6fd);
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffffff, #f5f5f5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    text-align: center;
+    background: linear-gradient(135deg, #ff6f91, #ff9a8b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+    background: linear-gradient(145deg, #ffffff, #e0e0e0);
+    box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.1), inset -4px -4px 6px rgba(255, 255, 255, 0.8);
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group select:focus {
+    border-color: #4caf50;
+    outline: none;
+    background: linear-gradient(145deg, #f5f5f5, #ffffff);
+}
+
+.form-group input[type="radio"] {
+    margin-right: 8px;
+    accent-color: #4caf50;
+}
+
+.form-group .options,
+.form-group .contact-method {
+    margin-top: 10px;
+}
+
+.form-group .options select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-group .contact-method input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.radio-group label {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.radio-group input:checked + label {
+    color: #4caf50;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.02);
+}
+
+button:active {
+    background-color: #388e3c;
+}

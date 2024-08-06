@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APSRTC Bus Pass</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://online.apsrtcpass.in:443/images/apsrtc.gif">
+    <script src="Script.js"></script>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="form-container" >
+        <center><img src="rtc.jpeg" alt="APSRTC Logo" style="width: 100%; max-width: 100px; height: auto;"></center>
+        <h2>ANDHRA PRADESH STATE ROAD TRANSPORT CORPORATION</h2>
+        <center><h3>STUDENT BUS PASS APPLICATION</h3></center>
+        <form id="educationForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Education:</label>
+                <div class="radio-group">
+                    <label><input type="radio" id="elementary" name="education" value="elementary" onclick="updateOptions()"> Elementary</label>
+                    <label><input type="radio" id="primary" name="education" value="primary" onclick="updateOptions()"> Primary</label>
+                    <label><input type="radio" id="inter" name="education" value="inter" onclick="updateOptions()"> Inter</label>
+                    <label><input type="radio" id="degree" name="education" value="degree" onclick="updateOptions()"> Degree</label>
+                    <label><input type="radio" id="btech" name="education" value="btech" onclick="updateOptions()"> BTech</label>
+                </div>
+            </div>
+
+            <div class="form-group options" id="educationOptions"></div>
+
+            <div class="form-group">
+                <label>Contact:</label>
+                <div class="radio-group">
+                    <label><input type="radio" id="mail" name="contact" value="mail" onclick="updateContactMethod()"> Mail</label>
+                    <label><input type="radio" id="phone" name="contact" value="phone" onclick="updateContactMethod()"> Phone</label>
+                </div>
+            </div>
+
+            <div class="form-group contact-method" id="contactMethod"></div>
+
+            <div class="form-group">
+                <label for="institute">Name of Institute:</label>
+                <input type="text" id="institute" name="institute">
+            </div>
+
+            <button type="submit" onclick="handleSubmit(event)">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
