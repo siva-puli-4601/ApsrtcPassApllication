@@ -113,7 +113,8 @@ function handleSubmit(event) {
 
 
     alert('Form submitted successfully!');
-    
+    window.location.href="index.html"
+     
 }
 
 
