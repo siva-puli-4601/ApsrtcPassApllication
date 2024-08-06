@@ -99,8 +99,8 @@ function handleSubmit(event) {
         }
     } else if (contact.value === 'phone') {
         
-        const phonePattern = /^[\d\s\+\-()]{10,}$/; 
-        if (!phonePattern.test(contactMethod.value.trim())) {
+        const phonePattern = /^(\+?\d{1,4})?[\s\-]?(\(?\d{3}\)?)?[\s\-]?(\d{3})[\s\-]?(\d{4})$/; 
+        if (contactMethod.value.length!==10 || !phonePattern.test(contactMethod.value.trim())) {
             alert('Please enter a valid phone number.');
             return;
         }
